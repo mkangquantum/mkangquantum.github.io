@@ -44,11 +44,11 @@
     {% if post.collection == 'teaching' %}
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
-      <p>{{post.authors}}</p>
-      {% if post.arXiv %}
-        <p><i>{{ post.venue }}</i>, {{post.paperno}} ({{ post.date | date: "%Y" }}). {{ post.arXiv }} </p>
+      <p>{{ post.authors }}</p>
+      {% if post.venue %}
+        <p><i>{{ post.venue }}</i>, {{ post.paperno }} ({{ post.date | date: "%Y" }}). [<a href="{{ post.arXivurl }}">{{ post.arXiv }}</a>] </p>
       {% else %}
-        <p><i>{{ post.venue }}</i>, {{post.paperno}} ({{ post.date | date: "%Y" }})</p>
+        <p><a href="{{ post.arXivurl }}">{{ post.arXiv }}</a> ({{ post.date | date: "%Y" }})</p>
       {% endif %}
     {% endif %}
 
