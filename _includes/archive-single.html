@@ -46,9 +46,9 @@
     {% elsif post.collection == 'publications' %}
       <p>{{post.authors}}</p>
       {% if post.arXiv %}
-        <p>{{ post.citation }} ({{ post.arXiv }})</p>
+        <p><i>{{ post.venue }}</i>, {{post.paperno}} ({{ post.date | date: "%Y" }}). {{ post.arXiv }} </p>
       {% else %}
-        <p>{{ post.citation }}</p>
+        <p><i>{{ post.venue }}</i>, {{post.paperno}} ({{ post.date | date: "%Y" }})</p>
       {% endif %}
     {% endif %}
 
