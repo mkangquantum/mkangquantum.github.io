@@ -48,7 +48,7 @@
         {% if post.venue %}
           <p><i>{{ post.venue }}</i>, {{ post.paperno }} ({{ post.date | date: "%Y" }}). [<a href="{{ post.arXivurl }}">{{ post.arXiv }}</a>] </p>
         {% else %}
-          <p><a href="{{ post.arXivurl }}">{{ post.arXiv }}</a> ({{ post.date | date: "%Y" }})</p>
+          <p><a href="{{ post.paperurl }}">{{ post.arXiv }}</a> ({{ post.date | date: "%Y" }})</p>
         {% endif %}
       {% endif %}
 
