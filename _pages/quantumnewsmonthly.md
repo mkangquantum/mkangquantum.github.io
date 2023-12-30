@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "Quantum News Monthly"
 permalink: /quantum-news-monthly/
 ---
