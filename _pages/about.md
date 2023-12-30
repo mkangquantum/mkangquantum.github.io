@@ -13,3 +13,9 @@ I’m a Physics PhD candidate at Duke University, working as a theorist in [Brow
 I am excited about using quantum physics to build quantum computers/simulators, and using quantum computers/simulators to better understand the quantum Nature. My research interest is in quantum error correction, quantum simulation, and quantum control. 
 
 Besides physics, I enjoy stand-up comedy and basketball.
+
+## Research Highlights
+
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
