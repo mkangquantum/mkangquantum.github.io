@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "Quantum News Monthly"
 permalink: /quantum-news-monthly/
 ---
 
