@@ -60,7 +60,7 @@
 
     {% if post.talk %}
     {% if post.talkurl %}
-      <p>{{ post. talk }} [<a href="{{ post.talkurl }}">{{ Talk }}</a>]</p>
+      <p>{{ post. talk }} [<a href="{{ post.talkurl }}">{{ post.talktoken }}</a>]</p>
     {% else %}
       <p>{{ post. talk }}</p>
     {% endif %}
