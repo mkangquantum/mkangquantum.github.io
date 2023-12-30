@@ -2,6 +2,9 @@
 main:
   - title: "Publications"
     url: /publications/
+
+  - title: "Quantum News Monthly"
+    url: /quantum-news-monthly/
         
   - title: "CV"
     url: /cv/
