@@ -16,6 +16,8 @@ Besides physics, I enjoy stand-up comedy and basketball.
 
 ## Research Highlights
 
+{% include base_path %}
+
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
