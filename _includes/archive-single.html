@@ -34,7 +34,7 @@
       {% endif %} -->
       {% if post.paperurl %}
         <a href="{{ post.paperurl }}">{{ title }}</a> 
-      {% elsif %}
+      {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}     
     </h2>
