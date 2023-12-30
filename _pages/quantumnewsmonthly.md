@@ -1,5 +1,4 @@
 ---
-layout: compress
 title: "Quantum News Monthly"
 permalink: /quantum-news-monthly/
 ---
