@@ -8,7 +8,7 @@ Click title for a brief summary!
 
 {% include base_path %}
 <!-- {% capture written_year %}'None'{% endcapture %} -->
-{% for post in site.posts reversed %}
+{% for post in site.posts %}
   {%if post.qnm %}
   {% include archive-single.html %}
   {% endif %}
