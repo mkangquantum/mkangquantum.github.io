@@ -10,7 +10,7 @@ authors: 'K. Sun*, <b>MK</b>*, H. Nuomin, G. Schwartz, D.N. Beratan, K.R. Brown,
 paperurl: 'https://www.nature.com/articles/s41467-025-59296-y'
 arXiv: 'arXiv:2405.14624'
 arXivurl: 'https://arxiv.org/abs/2405.14624'
-talk: "Student Perspective: From Atoms to Algae: Revealing Nature’s Quantum Tricks with a Quantum Computer"
+talk: "Student Perspective - From Atoms to Algae: Revealing Nature’s Quantum Tricks with a Quantum Computer"
 talktoken: "Article"
 talkurl: 'https://rqs.umd.edu/news/student-perspective-atoms-algae-revealing-natures-quantum-tricks-quantum-computer-mingyu-kang'
 highlight: True
