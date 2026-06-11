@@ -1,5 +1,5 @@
 ---
-title: "Error-mitigated nonorthogonal quantum eigensolver via shadow tomography"
+title: "Error-Mitigated Nonorthogonal Quantum Eigensolver via Shadow Tomography"
 collection: publications
 permalink: /publication/2026-03-10-ShadowNOQE
 date: 2026-03-10
