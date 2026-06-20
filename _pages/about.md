@@ -13,9 +13,17 @@ I am a Postdoctoral Scholar at UC Berkeley in [Whaley group](https://www.cchem.b
 
 I am excited about using quantum physics to build quantum systems, and using quantum systems to better understand quantum phenomena in Nature. My research has been in quantum error correction, quantum simulation, and quantum control, and I'm looking forward to my next steps! 
 
-## Research Highlights
+## Open-source projects
 
 {% include base_path %}
+
+{% for post in site.publications reversed %}
+  {% if post.open_source %}
+  {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## Research Highlights
 
 {% for post in site.publications reversed %}
   {% if post.highlight %}
