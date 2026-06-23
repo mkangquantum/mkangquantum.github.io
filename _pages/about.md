@@ -9,9 +9,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Scholar at UC Berkeley in [Whaley group](https://www.cchem.berkeley.edu/~kbwgrp/). I received my PhD in Physics at Duke University, working as a theorist in [Brown Lab](https://brownlab.pratt.duke.edu/). I finished my undergrad in Stanford University. I'm originally from South Korea. 
+Quantum physicist working across hardware, error correction, and applications.
 
-I am excited about using quantum physics to build quantum systems, and using quantum systems to better understand quantum phenomena in Nature. My research has been in quantum error correction, quantum simulation, and quantum control, and I'm looking forward to my next steps! 
+I am a Postdoctoral Scholar at UC Berkeley in [Whaley group](https://www.cchem.berkeley.edu/~kbwgrp/). I received my PhD in Physics at Duke University, working as a theorist in [Brown Lab](https://brownlab.pratt.duke.edu/). I finished my undergrad in Stanford University. I'm originally from South Korea. 
 
 ## Open-source projects
 
