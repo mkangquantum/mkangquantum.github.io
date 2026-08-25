@@ -1,0 +1,32 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: false
+---
+
+<p class="publications-intro">A complete list is also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+
+{% assign publications = site.publications | sort: "date" | reverse %}
+{% assign current_year = "" %}
+
+{% for publication in publications %}
+  {% assign publication_year = publication.date | date: "%Y" %}
+  {% if publication_year != current_year %}
+    {% unless forloop.first %}
+      </div>
+    </section>
+    {% endunless %}
+    <section class="publication-year" aria-labelledby="publications-{{ publication_year }}">
+      <h2 id="publications-{{ publication_year }}">{{ publication_year }}</h2>
+      <div class="publication-list">
+    {% assign current_year = publication_year %}
+  {% endif %}
+
+  {% include publication-entry.html publication=publication %}
+
+  {% if forloop.last %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}

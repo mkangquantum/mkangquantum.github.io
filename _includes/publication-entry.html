@@ -1,0 +1,31 @@
+{% assign publication = include.publication %}
+{% assign publication_year = publication.date | date: "%Y" %}
+{% assign publication_abstract = publication.excerpt | strip %}
+
+{% capture publication_details %}
+  <span class="publication-entry__body">
+    <span class="publication-entry__title">
+      <a href="{{ publication.paperurl | default: publication.url }}">{{ publication.title }}</a>
+    </span>
+    <span class="publication-entry__authors">{{ publication.authors }}</span>
+    <span class="publication-entry__citation">
+      {% if publication.venue %}<cite>{{ publication.venue }}</cite>{% endif %}{% if publication.paperno %} {{ publication.paperno }}{% endif %}
+      {% if publication_year %}({{ publication_year }}){% endif %}
+      {% if publication.arXivurl %}<a class="publication-entry__arxiv" href="{{ publication.arXivurl }}">{{ publication.arXiv | default: "arXiv" }}</a>{% endif %}
+    </span>
+  </span>
+{% endcapture %}
+
+{% if publication_abstract != "" %}
+  <details class="publication-entry">
+    <summary>
+      <span class="publication-entry__chevron" aria-hidden="true">&gt;</span>
+      {{ publication_details }}
+    </summary>
+    <div class="publication-entry__abstract">{{ publication_abstract | markdownify }}</div>
+  </details>
+{% else %}
+  <article class="publication-entry publication-entry--static">
+    {{ publication_details }}
+  </article>
+{% endif %}

@@ -1,0 +1,59 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="{{ site.locale | default: 'en-US' | slice: 0, 2 }}">
+  <head>
+    <meta charset="utf-8">
+    {% include seo.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f3f0">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body class="layout-{{ page.layout | default: 'page' }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    {% if page.content_width == 'wide' %}
+      {% assign content_shell = 'site-shell site-shell--wide' %}
+    {% else %}
+      {% assign content_shell = 'site-shell site-shell--narrow' %}
+    {% endif %}
+
+    <header class="site-header">
+      <div class="{{ content_shell }} site-header__inner">
+        <a class="site-name" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.title }}</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            {% for link in site.data.navigation.main %}
+              {% assign link_is_current = false %}
+              {% if page.url == link.url %}
+                {% assign link_is_current = true %}
+              {% elsif page.collection == 'publications' and link.url == '/publications/' %}
+                {% assign link_is_current = true %}
+              {% endif %}
+              <li>
+                <a href="{{ link.url | relative_url }}"{% if link_is_current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main {{ content_shell }}">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="{{ content_shell }}">
+        <nav class="footer-links" aria-label="Professional links">
+          <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+          <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+          <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
+          <a href="{{ site.author.orcid }}">ORCID</a>
+        </nav>
+        <p class="site-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</p>
+      </div>
+    </footer>
+  </body>
+</html>

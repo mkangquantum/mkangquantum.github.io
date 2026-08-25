@@ -1,0 +1,17 @@
+---
+permalink: /quantum-news-monthly/
+title: "Quantum News Monthly"
+author_profile: true
+published: false
+---
+
+Debopriyo Biswas and I made this Youtube series. We made 10-minute videos on exciting news and publications in the field of quantum physics and quantum computing each month. Click <a href="https://youtube.com/playlist?list=PLct-biImc3xJrzhjrYSfQAguj6nBYdY4J&si=5LH5sVy0NCikpRJ1">here</a> for the full series.
+
+
+{% include base_path %}
+<!-- {% capture written_year %}'None'{% endcapture %} -->
+{% for post in site.posts %}
+  {%if post.qnm %}
+  {% include archive-single.html %}
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% assign publication_abstract = page.excerpt | strip %}
+<article class="page-content publication-page" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <header class="page-header">
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <p class="publication-authors" itemprop="author">{{ page.authors }}</p>
+    <p class="publication-citation">
+      {% if page.venue %}<cite>{{ page.venue }}</cite>{% endif %}{% if page.paperno %} {{ page.paperno }}{% endif %}
+      {% if page.date %}({{ page.date | date: "%Y" }}){% endif %}
+    </p>
+    <p class="publication-links">
+      {% if page.paperurl %}<a href="{{ page.paperurl }}">Paper</a>{% endif %}
+      {% if page.arXivurl %}<a href="{{ page.arXivurl }}">{{ page.arXiv | default: "arXiv" }}</a>{% endif %}
+    </p>
+  </header>
+  {% if publication_abstract != "" %}
+    <div class="publication-page__summary" itemprop="abstract">{{ publication_abstract | markdownify }}</div>
+  {% endif %}
+  {{ content }}
+</article>
