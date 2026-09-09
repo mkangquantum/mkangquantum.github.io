@@ -5,4 +5,7 @@ permalink: /writing/
 author_profile: false
 ---
 
-<p class="empty-state">Coming soon.</p>
+{% include base_path %}
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %}
