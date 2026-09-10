@@ -10,7 +10,8 @@ Debopriyo Biswas and I made this Youtube series. We made 10-minute videos on exc
 
 {% include base_path %}
 <!-- {% capture written_year %}'None'{% endcapture %} -->
-{% for post in site.posts %}
+{% assign qnm_posts = site.qnm | sort: "date" | reverse %}
+{% for post in qnm_posts %}
   {%if post.qnm %}
   {% include archive-single.html %}
   {% endif %}

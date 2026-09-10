@@ -232,6 +232,24 @@ h3 {
   font-weight: 550;
 }
 
+.reading-list__comment {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.reading-list__comment > summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+.reading-list__comment > p {
+  margin: 0.5rem 0 0 28px;
+  padding: 0.45rem 0.8rem;
+  border-left: 2px solid var(--color-line);
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
 .publication-list {
   min-width: 0;
 }

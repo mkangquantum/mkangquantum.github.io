@@ -110,6 +110,7 @@ author:
   steam            :
   tumblr           :
   twitter          : 
+  x                : "MingyuKang4"
   bluesky          : "mingyukang.bsky.social"
   vine             :
   weibo            :
@@ -176,6 +177,9 @@ kramdown:
 
 # Collections
 collections:
+  qnm:
+    output: true
+    permalink: /quantum-news-monthly/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -196,6 +200,17 @@ defaults:
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _qnm
+  - scope:
+      path: ""
+      type: qnm
     values:
       layout: single
       author_profile: true
