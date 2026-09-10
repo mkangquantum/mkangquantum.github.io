@@ -15,7 +15,7 @@ It's a hard time to be a junior researcher in the AI era. Producing research tha
 
 I'm not being anti-AI here. I'm a huge fan of how AI is enabling unpredecedented research, and I'm deeply committed to being part of that transformation. I see this as a *yin and yang* situation: those who master both the discipline of internalizing fundamental knowledge and the skill of making AI-pilled progress can do great research. The two are not opposite; they are complementary, interconnected, and interdependent.
 
-In hopes of *making textbooks great again*, I'm sharing a list of my favorite textbooks I read from 2016 to 2026. Obviously, I only read a few chapters from the more advanced textbooks to apply to my own research. I’m sure I’ve missed plenty of good books; it would be great if this post inspires you to share your own reading list. Click the triangle for my thoughts on the book.
+In hopes of *making textbooks great again*, I'm sharing a list of my favorite textbooks I read from 2016 to 2026. Obviously, I only read a few chapters from the more advanced textbooks to apply to my own research. For those of you with a better list, it would be great if this post inspires you to share your own reading list. Click the triangle for my thoughts on the book.
 
 Even now, when AI models seem to have digested every textbook out there, the legacy of these books lives on when we take the time to understand their ideas. Only then will our orchestration of knowledge production be firmly grounded in a deep understanding of first principles. And if you ask me, textbooks are best read in print, with a pencil in hand.
 
