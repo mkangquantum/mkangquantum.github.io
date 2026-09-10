@@ -92,7 +92,7 @@ Even now, when AI models seem to have digested every textbook out there, the leg
         <span>Dan Browne. <cite><a href="https://sites.google.com/site/danbrowneucl/lectures-on-topological-codes-and-quantum-computation">Lectures on Topological Codes and Quantum Computation</a></cite> (lecture notes).</span>
       </summary>
       <!-- TODO: Replace the placeholder below with your brief comment. -->
-      <p>Life is short. Quantum computing is already too much. When am I supposed to learn topology? Fortunately, these lecture notes help you understand why people keep bringing up homology and chain complexes in QEC research. The fundamental idea that encoding quantum information in topology can protect it from noise is just beautiful, and it also underlies today's state-of-the-art QEC demonstrations.</p>
+      <p>Life is short. Quantum computing is already too much. When am I supposed to learn topology? Fortunately, these lecture notes help you understand why scary terms like homology and chain complexes appear so often in QEC research. The fundamental idea that encoding quantum information in topology can protect it from noise is just beautiful, and it also underlies today's state-of-the-art QEC demonstrations.</p>
     </details>
     <details class="reading-list__comment">
       <summary>
