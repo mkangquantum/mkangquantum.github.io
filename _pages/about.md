@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-Research scientist, Quantum computing and scientific AI.
+Research scientist in quantum computing and scientific AI
 
 I work at the intersection of quantum computing and scientific AI, with a background spanning quantum hardware, error correction, and applications.
 
